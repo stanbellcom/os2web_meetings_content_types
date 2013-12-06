@@ -69,7 +69,6 @@ features[node][] = os2web_meeting_search_status
 features[node][] = os2web_meetings_bullet
 features[node][] = os2web_meetings_bullet_attach
 features[node][] = os2web_meetings_meeting
-features[node][] = os2web_meetings_spaper
 features[taxonomy][] = os2web_meetings_tax_committee
 features[taxonomy][] = os2web_meetings_tax_location
 features[taxonomy][] = os2web_meetings_tax_status

@@ -51,14 +51,6 @@ function os2web_meetings_content_types_node_info() {
       'title_label' => t('Titel'),
       'help' => '',
     ),
-    'os2web_meetings_spaper' => array(
-      'name' => t('Speaker paper'),
-      'base' => 'node_content',
-      'description' => '',
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => '',
-    ),
   );
   return $items;
 }
