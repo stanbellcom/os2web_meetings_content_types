@@ -39,6 +39,7 @@ features[field][] = node-os2web_meetings_meeting-field_os2web_meetings_add_doc_c
 features[field][] = node-os2web_meetings_meeting-field_os2web_meetings_addendum
 features[field][] = node-os2web_meetings_meeting-field_os2web_meetings_bullets
 features[field][] = node-os2web_meetings_meeting-field_os2web_meetings_category
+features[field][] = node-os2web_meetings_meeting-field_os2web_meetings_comments
 features[field][] = node-os2web_meetings_meeting-field_os2web_meetings_committee
 features[field][] = node-os2web_meetings_meeting-field_os2web_meetings_date
 features[field][] = node-os2web_meetings_meeting-field_os2web_meetings_full_doc
