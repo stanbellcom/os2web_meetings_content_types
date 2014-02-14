@@ -1705,6 +1705,73 @@ function os2web_meetings_content_types_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-os2web_meetings_meeting-field_os2web_meetings_conditions'.
+  $fields['node-os2web_meetings_meeting-field_os2web_meetings_conditions'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_os2web_meetings_conditions',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'text_long',
+    ),
+    'field_instance' => array(
+      'bundle' => 'os2web_meetings_meeting',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => 32,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_os2web_meetings_conditions',
+      'label' => ' Særlige Forhold',
+      'required' => 0,
+      'settings' => array(
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'rows' => '5',
+        ),
+        'type' => 'text_textarea',
+        'weight' => '26',
+      ),
+    ),
+  );
+
   // Exported field: 'node-os2web_meetings_meeting-field_os2web_meetings_date'.
   $fields['node-os2web_meetings_meeting-field_os2web_meetings_date'] = array(
     'field_config' => array(
@@ -3496,6 +3563,7 @@ function os2web_meetings_content_types_field_default_fields() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t(' Særlige Forhold');
   t('Abbreviation');
   t('Acadre name');
   t('Additional doc');
