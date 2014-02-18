@@ -1,7 +1,7 @@
 name = OS2Web - meetings content types
 description = Content types of meeting, bullet point and attachment for os2web and os2dagsorden systems
 core = 7.x
-package = Features
+package = OS2Web - Backend
 php = 5.2.4
 version = 7.x-1.0-alpha
 project = os2web_meetings_content_types
