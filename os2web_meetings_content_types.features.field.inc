@@ -1936,7 +1936,7 @@ function os2web_meetings_content_types_field_default_fields() {
           'text_parts' => array(),
           'year_range' => '-0:+1',
         ),
-        'type' => 'date_popup',
+        'type' => 'date_select',
         'weight' => '9',
       ),
     ),
@@ -2574,11 +2574,13 @@ function os2web_meetings_content_types_field_default_fields() {
       'locked' => '0',
       'module' => 'computed_field',
       'settings' => array(
-        'code' => 'if (function_exists(\'_os2web_meetings_generate_search_data\')) {
-  $entity_field[0][\'value\'] = _os2web_meetings_generate_search_data($entity);
-} else {
-  $entity_field[0][\'value\'] = \'\';
-}',
+         'code' => 'if (module_exists(os2dagsorden_fields_and_content_types)){
+        $entity_field[0][\'value\'] = os2dagsorden_fields_and_content_types_meeting_search_metadata($entity, $entity_type);
+        } else if (function_exists(\'_os2web_meetings_generate_search_data\')) {
+        $entity_field[0][\'value\'] = _os2web_meetings_generate_search_data($entity);
+        } else {
+        $entity_field[0][\'value\'] = \'\';
+      }',
         'database' => array(
           'data_default' => '',
           'data_index' => 0,
